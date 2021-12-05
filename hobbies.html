@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>My Hobbies</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Open+Sans:wght@500&family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+
+
+h3 {
+  background-color: #38b6ff;
+  width: 400px;
+  border: 15px solid #087078;
+  padding: 20px;
+  margin: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body style="background-color:teal;">
+
+<!-- Sidebar (hidden by default) Credit to w3schools -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <<a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="work.html" onclick="w3_close()" class="w3-bar-item w3-button">Work</a>
+</nav>
+
+<!-- Top menu Food (Credit to w3schools)-->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto" "background-color:#004aad">
+    <div class="w3-button w3-padding-16 w3-left" style="background-color:#008037" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16" style="background-color:#7ed957">Mark's Website</div>
+  </div>
+</div>
+
+<h3>When I have free time, this is what I like to do:</h3>
+<div style="overflow:auto">
+<div class="hobber">
+  <div><img src="images/youtube.png" title="Youtube" style=width:400px></div>
+  <div><img src="images/switch.png" title="Switch" style=width:400px></div>
+  <div><img src="images/music.png" title="Music" style=width:400px></div>
+  <div><img src="images/dog.png" title="Dog" style=width:400px></div>
+  <div class="flex-container" class="b">
+  <div><p>I watch a lot of Youtube videos when I have the chance to. My favourite channel to watch is Lemmino, he does video documentaries in great detail, which are very entertaining. I would definitely recommend!</p> </div>
+  <div><p>I like playing my Switch becuase you can play it wherever you are. I use my Switch to play games, such as Pokemon and Mario Kart. Both games are great fun, and I would highly recommend them.</p> </div>
+  <div><p>I listen to music in my free time. I don't have a specific genre I enjoy, but I mostly listen to music from the 80's, such as "Somebody's Watching Me" by Rockwell,"C-Moon" by Paul McCartney, & "Smooth Criminal" by Michael Jackson.</p> </div>
+  <div><p>I walk with my dog every night before bed, and sometimes we go on an entire adventure around my estate. A walk before bed is good for your health, and ensures that the dog doesn't leave a nasty surprise in the morning! </p> </div>
+</div>
+
+  <div><img src="images/minecraft.png" title="Minecraft" style=width:400px></div>
+  <div><img src="images/piano.png" title="Piano" style=width:400px></div>
+  <div><img src="images/paint.png" title="Paint" style=width:400px></div>
+  <div><img src="images/bike.png" title="Cycling" style=width:400px></div>
+  <div class="flex-container" class="b">
+  <div><p>Minecraft is my favourite game of all time. I like making adventure worlds for other people to play on. There's so much to do in this game, you could make an entire society about it and you wouldn't even scratch the surface!</p> </div>
+  <div><p>I can play the piano at a beginner level. However, I like to learn music by ear and then play it on the piano. I find it more fun to learn it myself!</p> </div>
+  <div><p>I like drawing in my free time! Whether it is on paper or digitally, I find it relaxing. Fun fact: I made all of these icons on this page! It was very fun to make them.</p> </div>
+  <div><p>Bicycle! Bicycle! Bicycle! I enjoy riding my bike every now and then when the weather's nice. I cycle in the park in my area, and it's not only great fun, but it's also healthy!</p> </div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<!--Images at the bottom of the page -->
+<div class="wrapper">
+<div class="bottom-left">
+  <div>  <a href="https://www.dcu.ie">
+    <img src="images/dcucd.svg" alt="DCU"  style=width:400px>
+     </a>
+   </div>
+ </div>
+ <div class="bottom-right">
+    <div> <a href="index.html">
+     <img src="images/logo.png" alt="Site Logo" style=width:400px>
+  </a>
+  </div>
+</div>
+</div>
+
+<script>
+// Script to open and close sidebar (w3schools)
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

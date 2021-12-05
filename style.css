@@ -1,0 +1,186 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1,h2,h3,h4,h5,h6,span.a {
+  font-family: 'Cantora One', sans-serif;
+}
+
+h4.b {
+  font-family: "Oswald", sans-serif;
+}
+
+p,h1,h2,h3,h4,h5,h6,span.c {
+  font-family: "Open Sans", sans-serif;
+}
+
+.bottom-left {
+    flex: 50%;
+    display: inline-block;
+}
+
+.bottom-right {
+    flex: 50%;
+    text-align: right;
+    display: inline-block;
+}
+
+img {
+display: inline-block;
+}
+
+ul {
+  white-space: nowrap;
+}
+
+ul, li {
+  list-style: none;
+  display: inline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*this tag relates to the CSS box model. It means that the total width and height of all elements will include padding, border and margin sizes*/
+/*The * selector selects all elements in a page*/
+}
+
+.menu-container {
+  color: #fff; /*white*/
+  background-color: #38b6ff;  /* Blue */
+  padding: 20px 0; /*this shortcut will add 20 pixels to the top and bottom and 0 pixels to the right and left of the menu container*/
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #004aad;  /* For debugging */
+  width: 900px;
+}
+.header-container {
+  color: #5995DA;
+  background-color: #004aad;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-grid {
+  width: 900px; /*fixed width to match fixed width of menu and header*/
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #38b6ff;
+  height: 200px;
+  flex: 1; /*this property indicates the starting flex for each item. If all items have the same flex, they flex equally (occupying equal space)*/
+}
+
+#grad {
+  background-image: linear-gradient(red, yellow, green);
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  flex-shrink: 4;
+  margin: 10px;
+  padding: 20px;
+}
+
+.hobber { /* same as wrapper but for Hobbies page*/
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  flex-shrink: 4;
+  padding: 20px;
+}
+
+.rangler {
+  display: flex;
+  flex-flow:column;
+  font-weight: bold;
+  text-align: center;
+  align-self: flex-end;
+  margin: 10px;
+}
+
+.flex-container { /* FlexBox Code*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 10;
+  background-color: #004aad;
+}
+
+.flex-container > div { /* FlexBox Code 2*/
+  background-color: #38b6ff;
+  width: 400px;
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 26px;
+}
+
+
+.main {
+  text-align: left;
+}
+
+.aside-1 {
+  background: #004aad;
+}
+
+.aside-2 {
+  background: #00edd0;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+}
